@@ -1,7 +1,4 @@
-using System;
 
-namespace Se
-{
     class Bachelor
     {
         protected int customernumber;
