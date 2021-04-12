@@ -1,0 +1,73 @@
+using System;
+
+namespace Se
+{
+    class Bachelor
+    {
+        protected int customernumber;
+        protected string customername;
+        protected string customeraddress;
+
+
+        public int Customernumber
+        {
+            set { this.customernumber = value; }
+            get { return this.customernumber; }
+        }
+        public string Customername
+        {
+            set { this.customername = value; }
+            get { return this.customername; }
+        }
+        public string Customeraddress
+        {
+            set { this.customeraddress = value; }
+            get { return this.customeraddress; }
+        }
+        internal Bachelor(int customernumber, string customername, string customeraddress)
+        {
+            this.customernumber = customernumber;
+            this.customername = customername;
+            this.customeraddress = customeraddress;
+
+        }
+
+        public string Tostring()
+        {
+            return "Customer number = " + Customernumber + "\n" +
+                   "Customer name = " + Customername + "\n" +
+                   "Customer Address = " + Customeraddress + "\n";
+
+
+        }
+
+    }
+
+
+
+
+
+
+    class Final
+    {
+        public static void Main(string[] args)
+        {
+            Bachelor customer1 = new Bachelor(1, "Rafin", "Narail");
+            Bachelor customer2 = new Bachelor(2, "Rahul", "Faridpur");
+            Bachelor customer3 = new Bachelor(3, "Sneha", "Comilla");
+            Console.WriteLine(customer1.Tostring());
+            Console.WriteLine(customer2.Tostring());
+            Console.WriteLine(customer3.Tostring());
+
+
+        }
+    }
+
+}
+
+
+
+
+
+
+
